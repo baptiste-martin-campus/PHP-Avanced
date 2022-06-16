@@ -1,10 +1,19 @@
 <?php
 
-namespace Park;
+use Park\Parking;
+use Park\Vehicule;
 
-final class Plane extends Vehicule
-{
+class Ferry extends Vehicule{
+
     private static float $speed;
+
+    private Parking $parking;
+    public function __construct($parking){
+
+        $this->parking =$parking;
+
+
+    }
 
     static public function setSpeed(float $speed): void
     {
@@ -17,8 +26,5 @@ final class Plane extends Vehicule
         return self::$speed;
     }
 
-    public function __toString(): string
-    {
-        return "plane";
-    }
+
 }

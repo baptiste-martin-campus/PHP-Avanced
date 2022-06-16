@@ -9,7 +9,7 @@ use Park\Interfaces\Parkable;
  * L'interface donne un contrat à la classe qui pour exister devra implémenter les méthodes du contrat
  */
 
-class Car extends Vehicule implements Parkable
+final class Car extends Vehicule implements Parkable
 {
 
     protected static float $speed;

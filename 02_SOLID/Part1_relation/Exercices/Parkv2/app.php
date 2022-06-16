@@ -1,16 +1,10 @@
 <?php
 
+
 require_once __DIR__ . '/vendor/autoload.php';
 
 use Park\{Car, Bike, Ferry, Plane, Parking};
 
-
-require __DIR__ . '/vendor/autoload.php';
-
-use Park\Car;
-use Park\Plane;
-use Park\Bike;
-use Park\Parking;
 
 Car::setSpeed(180);
 Plane::setSpeed(890.5);

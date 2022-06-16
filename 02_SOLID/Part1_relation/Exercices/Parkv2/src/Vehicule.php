@@ -8,6 +8,7 @@ abstract class Vehicule {
     protected string $name;
     protected string $status;
     protected string $engine;
+    protected static float $speed;
 
     private array $types = ['petrol', 'electric'];
 
